@@ -25,6 +25,7 @@ libraries/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc \
 libraries/CMSIS/Device/ST/STM32F1xx/Source/Templates \
 libraries/STM32F1xx_HAL_Driver/Src/Legacy \
 libraries/STM32F1xx_HAL_Driver/Src \
+rt-thread/components/drivers/i2c \
 rt-thread/components/drivers/misc \
 rt-thread/components/drivers/serial \
 rt-thread/components/drivers/src \

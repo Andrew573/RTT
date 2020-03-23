@@ -148,6 +148,11 @@ RT_WEAK void rt_hw_board_init()
     rt_hw_usart_init();
 #endif
 
+#ifdef RT_USING_I2C
+    extern int rt_hw_i2c_init(char *name, rt_uint8_t scl, rt_uint8_t sda);
+    rt_hw_i2c_init("iic1", 4, 5);
+#endif
+
     /* Set the shell console output device */
 #if defined(RT_USING_DEVICE) && defined(RT_USING_CONSOLE)
     rt_console_set_device(RT_CONSOLE_DEVICE_NAME);

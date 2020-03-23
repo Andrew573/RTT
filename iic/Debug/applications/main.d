@@ -57,6 +57,9 @@ applications/main.o: ../applications/main.c \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/poll.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/ringblk_buf.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/serial.h \
+ E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c.h \
+ E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c_dev.h \
+ E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c-bit-ops.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/pin.h \
  E:\RTT_project\5.oled\iic\rt-thread\include/rtdbg.h
 
@@ -175,6 +178,12 @@ E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/poll.h:
 E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/ringblk_buf.h:
 
 E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/serial.h:
+
+E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c.h:
+
+E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c_dev.h:
+
+E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c-bit-ops.h:
 
 E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/pin.h:
 

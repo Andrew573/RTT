@@ -16,6 +16,7 @@ RM := rm -rf
 -include rt-thread/components/drivers/src/subdir.mk
 -include rt-thread/components/drivers/serial/subdir.mk
 -include rt-thread/components/drivers/misc/subdir.mk
+-include rt-thread/components/drivers/i2c/subdir.mk
 -include libraries/STM32F1xx_HAL_Driver/Src/Legacy/subdir.mk
 -include libraries/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include libraries/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/subdir.mk

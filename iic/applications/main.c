@@ -17,7 +17,7 @@
 #include <rtdbg.h>
 
 /* PLEASE DEFINE the LED0 pin for your board, such as: PA5 */
-#define LED0_PIN    GET_PIN(A, 5)
+#define LED0_PIN    GET_PIN(B, 14)
 
 int main(void)
 {
@@ -28,8 +28,8 @@ int main(void)
     while (count++)
     {
         /* set LED0 pin level to high or low */
-        rt_pin_write(LED0_PIN, count % 2);
-        LOG_D("Hello RT-Thread!");
+//        rt_pin_write(LED0_PIN, count % 2);
+//        LOG_D("Hello RT-Thread!");
         rt_thread_mdelay(1000);
     }
 

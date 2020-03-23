@@ -1,7 +1,7 @@
-rt-thread/components/drivers/misc/pin.o: \
- ../rt-thread/components/drivers/misc/pin.c \
+rt-thread/components/drivers/i2c/i2c_core.o: \
+ ../rt-thread/components/drivers/i2c/i2c_core.c \
  E:\RTT_project\5.oled\iic\rtconfig_preinc.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/pin.h \
+ E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/rtdevice.h \
  E:\RTT_project\5.oled\iic\rt-thread\include/rtthread.h \
  E:\RTT_project\5.oled\iic/rtconfig.h \
  E:\RTT_project\5.oled\iic\rt-thread\include/rtdebug.h \
@@ -24,7 +24,6 @@ rt-thread/components/drivers/misc/pin.o: \
  E:\RTT_project\5.oled\iic\rt-thread\include/rtservice.h \
  E:\RTT_project\5.oled\iic\rt-thread\include/rtm.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\finsh/finsh_api.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/rtdevice.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/ringbuffer.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/completion.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/dataqueue.h \
@@ -38,16 +37,11 @@ rt-thread/components/drivers/misc/pin.o: \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c_dev.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c-bit-ops.h \
  E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/pin.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\finsh/finsh.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\finsh/finsh_api.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/stdio.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/ctype.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/stdlib.h \
- E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/string.h
+ E:\RTT_project\5.oled\iic\rt-thread\include/rtdbg.h
 
 E:\RTT_project\5.oled\iic\rtconfig_preinc.h:
 
-E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/pin.h:
+E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/rtdevice.h:
 
 E:\RTT_project\5.oled\iic\rt-thread\include/rtthread.h:
 
@@ -93,8 +87,6 @@ E:\RTT_project\5.oled\iic\rt-thread\include/rtm.h:
 
 E:\RTT_project\5.oled\iic\rt-thread\components\finsh/finsh_api.h:
 
-E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/rtdevice.h:
-
 E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/ringbuffer.h:
 
 E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/ipc/completion.h:
@@ -121,14 +113,4 @@ E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/i2c-bit-o
 
 E:\RTT_project\5.oled\iic\rt-thread\components\drivers\include/drivers/pin.h:
 
-E:\RTT_project\5.oled\iic\rt-thread\components\finsh/finsh.h:
-
-E:\RTT_project\5.oled\iic\rt-thread\components\finsh/finsh_api.h:
-
-E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/stdio.h:
-
-E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/ctype.h:
-
-E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/stdlib.h:
-
-E:\RTT_project\5.oled\iic\rt-thread\components\libc\compilers\minilibc/string.h:
+E:\RTT_project\5.oled\iic\rt-thread\include/rtdbg.h:
