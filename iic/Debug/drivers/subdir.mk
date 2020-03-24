@@ -7,6 +7,7 @@ C_SRCS += \
 ../drivers/board.c \
 ../drivers/drv_common.c \
 ../drivers/drv_gpio.c \
+../drivers/drv_oled.c \
 ../drivers/drv_soft_i2c.c \
 ../drivers/drv_usart.c 
 
@@ -14,6 +15,7 @@ OBJS += \
 ./drivers/board.o \
 ./drivers/drv_common.o \
 ./drivers/drv_gpio.o \
+./drivers/drv_oled.o \
 ./drivers/drv_soft_i2c.o \
 ./drivers/drv_usart.o 
 
@@ -21,6 +23,7 @@ C_DEPS += \
 ./drivers/board.d \
 ./drivers/drv_common.d \
 ./drivers/drv_gpio.d \
+./drivers/drv_oled.d \
 ./drivers/drv_soft_i2c.d \
 ./drivers/drv_usart.d 
 
