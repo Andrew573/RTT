@@ -98,3 +98,53 @@ rt_uint8_t mpu6050_check()
         return RT_EOK;
     }
 }
+
+void mpu6050_get_gyroscope(rt_uint16_t *x, rt_uint16_t *y, rt_uint16_t *z)  //ÍÓÂİÒÇ
+{
+    rt_uint8_t buf[6], ret;
+
+    ret = iic_read_reg(0x43, 6, buf);
+    if(ret == RT_EOK)
+    {
+        *x = ((rt_uint16_t) buf[0]<<8) | buf[1];
+        *y = ((rt_uint16_t) buf[2]<<8) | buf[3];
+        *z = ((rt_uint16_t) buf[4]<<8) | buf[5];
+    }
+    else {
+        rt_kprintf("get_gyroscope fail\n");
+    }
+}
+
+void mpu6050_get_accelerometer(rt_uint16_t *x, rt_uint16_t *y, rt_uint16_t *z)  //½ÇËÙ¶È
+{
+    rt_uint8_t buf[6], ret;
+
+    ret = iic_read_reg(0x3B, 6, buf);
+    if(ret == RT_EOK)
+    {
+        *x = ((rt_uint16_t) buf[0]<<8) | buf[1];
+        *y = ((rt_uint16_t) buf[2]<<8) | buf[3];
+        *z = ((rt_uint16_t) buf[4]<<8) | buf[5];
+    }
+    else {
+        rt_kprintf("get_accelerometer fail\n");
+    }
+}
+
+void mpu6050_get_temperature(rt_uint16_t *t)  //ÎÂ¶È
+{
+    rt_uint8_t buf[2], ret;
+    float temp;
+    rt_int16_t raw;
+
+    ret = iic_read_reg(0x41, 2, buf);
+    if(ret == RT_EOK)
+    {
+        raw = ((rt_uint16_t)buf[0] << 8) | buf[1];
+        temp = 36.53 + ((double)raw)/340;
+        *t = temp*100;
+    }
+    else {
+        rt_kprintf("get_accelerometer fail\n");
+    }
+}

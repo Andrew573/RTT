@@ -12,6 +12,7 @@
 
 static void mpu_thread_entry(void *para)
 {
+    rt_uint16_t x = 0, y = 0, z = 0;
     rt_kprintf("this is mpu thread\n");
 
     if(RT_EOK == mpu6050_init())
@@ -21,6 +22,16 @@ static void mpu_thread_entry(void *para)
     else
         rt_kprintf("mpu6050 init fail\n");
     mpu6050_check();
+    while(1)
+    {
+        mpu6050_get_gyroscope(&x, &y, &z);
+        rt_kprintf("gx=%d, gy=%d, gz=%d\n", x,y,z);
+        mpu6050_get_accelerometer(&x, &y, &z);
+        rt_kprintf("ax=%d, ay=%d, az=%d\n", x,y,z);
+        mpu6050_get_temperature(&x);
+        rt_kprintf("temp=%d\n", x);
+        rt_thread_mdelay(1000);
+    }
 }
 
 rt_err_t mpu_sample()

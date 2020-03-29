@@ -12,5 +12,8 @@
 
 rt_uint8_t mpu6050_init();
 rt_uint8_t mpu6050_check();
+void mpu6050_get_gyroscope(rt_uint16_t *x, rt_uint16_t *y, rt_uint16_t *z);
+void mpu6050_get_accelerometer(rt_uint16_t *x, rt_uint16_t *y, rt_uint16_t *z);
+void mpu6050_get_temperature(rt_uint16_t *t);
 
 #endif /* DRIVERS_IIC_DRV_MPU6050_H_ */
