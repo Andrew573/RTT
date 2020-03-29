@@ -39,14 +39,14 @@ extern "C" {
   *                 such as     #define BSP_UART1_RX_USING_DMA
   *
   */
-
+#define BSP_USING_UART1
 #define BSP_USING_UART2
 
 #if defined(BSP_USING_UART1)
-#define UART1_TX_PORT       GPIOX
-#define UART1_RX_PORT       GPIOX
-#define UART1_TX_PIN        GPIO_PIN_X
-#define UART1_RX_PIN        GPIO_PIN_X
+#define UART1_TX_PORT       GPIOA
+#define UART1_RX_PORT       GPIOA
+#define UART1_TX_PIN        GPIO_PIN_9
+#define UART1_RX_PIN        GPIO_PIN_10
 #endif
 #if defined(BSP_USING_UART2)
 #define UART2_TX_PORT       GPIOA

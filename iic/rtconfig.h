@@ -42,7 +42,7 @@
 #define RT_USING_DEVICE
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 256
-#define RT_CONSOLE_DEVICE_NAME "uart2"
+#define RT_CONSOLE_DEVICE_NAME "uart1"
 /* end of Kernel Device Object */
 #define RT_VER_NUM 0x40002
 /* end of RT-Thread Kernel */
@@ -91,6 +91,7 @@
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_I2C
 #define RT_USING_I2C_BITOPS
+//#define RT_I2C_DEBUG
 #define RT_USING_PIN
 
 /* Using USB */
